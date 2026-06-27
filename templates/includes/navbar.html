@@ -1,0 +1,20 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="/"
+           class="logo">
+            <span class="logo-icon">
+                ☪︎
+            </span>
+            <span class="logo-text">
+                Сыфаты
+            </span>
+        </a>
+        <div class="menu">
+            {% for item in navigation %}
+            <a href="{{ item.url }}">
+                {{ item.title }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>

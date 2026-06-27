@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Сыфаты{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-logo">☪︎</div>
+
+    <h1>Сыфаты</h1>
+
+    {% include "includes/divider.html" %}
+
+    <div class="lesson-buttons">
+
+        {% for lesson in lessons %}
+            {% include "includes/lesson_card.html" %}
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

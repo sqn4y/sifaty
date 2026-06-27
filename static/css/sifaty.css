@@ -1,0 +1,163 @@
+.lesson{
+    max-width:1100px;
+    margin:auto;
+}
+
+.lesson-header{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.lesson-number{
+    min-width:150px;
+    background:var(--brown);
+    color:#fff;
+    padding:18px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:700;
+}
+
+.lesson-title{
+    flex:1;
+    background:#fff;
+    border-radius:22px;
+    padding:24px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.lesson-icon{
+    font-size:42px;
+    color:var(--brown);
+}
+
+.lesson-title h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:56px;
+}
+
+.lesson-text{
+    background:#fff;
+    padding:28px;
+    border-radius:22px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card{
+    background:#fff;
+    border-radius:22px;
+    padding:30px;
+    margin-bottom:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:24px;
+    color:var(--dark);
+}
+
+.purpose-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.purpose-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.purpose-item span{
+    width:42px;
+    height:42px;
+    background:var(--brown);
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    flex-shrink:0;
+}
+
+.classification{
+    display:grid;
+    grid-template-columns:1fr 220px 1fr;
+    gap:20px;
+    align-items:center;
+}
+
+.class-box,
+.center-box{
+    background:var(--light);
+    padding:22px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:600;
+}
+
+.center-box{
+    background:var(--brown);
+    color:#fff;
+}
+
+.example-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.example-card{
+    background:var(--light);
+    border-radius:18px;
+    padding:24px;
+}
+
+.qualities-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+}
+
+.quality{
+    background:var(--light);
+    padding:22px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:600;
+    transition:.25s;
+}
+
+.quality:hover{
+    background:var(--brown);
+    color:#fff;
+    transform:translateY(-4px);
+}
+
+@media(max-width:768px){
+
+    .lesson-header{
+        flex-direction:column;
+    }
+
+    .lesson-title{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .lesson-title h1{
+        font-size:38px;
+    }
+
+    .classification{
+        grid-template-columns:1fr;
+    }
+
+}

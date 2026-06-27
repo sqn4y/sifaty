@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Правила{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/rules.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="rules">
+
+    <div class="page-icon">☪︎</div>
+
+    <h1>Правила</h1>
+
+    {% include "includes/divider.html" %}
+
+    <div class="rules-list">
+
+        {% for rule in rules %}
+            {% include "includes/rule_card.html" %}
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

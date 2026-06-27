@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Сыфаты букв{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sifaty.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="lesson">
+
+    {% include "includes/sifaty/intro.html" %}
+    {% include "includes/sifaty/purpose.html" %}
+    {% include "includes/sifaty/classification.html" %}
+    {% include "includes/sifaty/examples.html" %}
+    {% include "includes/sifaty/qualities.html" %}
+
+</section>
+
+{% endblock %}

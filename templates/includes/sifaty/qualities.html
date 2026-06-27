@@ -1,0 +1,10 @@
+<section class="card">
+    <h2>Постоянные сифаты</h2>
+    <div class="qualities-grid">
+        {% for rule in rules[:9] %}
+        <div class="quality">
+            {{ rule.title }}
+        </div>
+        {% endfor %}
+    </div>
+</section>
